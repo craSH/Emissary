@@ -392,7 +392,7 @@ def main():
     asyncThread.start()
 
     # start a console (ipython)
-    from IPython.frontend.terminal.interactiveshell import TerminalInteractiveShell
+    from IPython.terminal.interactiveshell import TerminalInteractiveShell
     shell = TerminalInteractiveShell(user_ns=globals())
     shell.mainloop()
 
