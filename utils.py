@@ -13,7 +13,7 @@ def color_string(data, color):
     # Setup a TerminalController for formatted output
     term = TerminalController()
 
-    result = term.render("${" + color.upper() + "}" + data + "${NORMAL}")
+    result = term.render("${" + color.upper() + "}") + data + term.render("${NORMAL}")
     return(result)
 
 def sane(x):
